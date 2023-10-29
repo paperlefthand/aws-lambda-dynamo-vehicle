@@ -57,7 +57,7 @@ resource "aws_lambda_function" "vehicles" {
   # filename      = "lambda_vehicles.zip"
   # source_code_hash = filebase64sha256("lambda_vehicles.zip")
   filename      = data.archive_file.lambda_vehicles.output_path
-  source_code_hash = filebase64sha256(data.archive_file.lambda_package.output_path)
+  source_code_hash = filebase64sha256(data.archive_file.lambda_vehicles.output_path)
   role          = aws_iam_role.lambda_role.arn
   handler       = "lambda_function.lambda_handler"
   runtime       = "python3.11"
