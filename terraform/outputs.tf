@@ -1,4 +1,4 @@
-# output "api_ip" {
-#   description = "IP Address of the API Gateway"
-#   value       = 
+# output "apigateway_endpoint_url" {
+#   description = "URL of the API Gateway"
+#   value       = aws_api_gateway_deployment.api_deployment.invoke_url
 # }

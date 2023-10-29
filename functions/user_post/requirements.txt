@@ -1,2 +1,0 @@
-# For Lambda Deployment
-boto3==1.28.35
